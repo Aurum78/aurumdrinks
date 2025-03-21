@@ -1,13 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>AUd rinks QR Code Redirect</title>
-  <meta http-equiv="refresh" content="0; url=https://aurum78.github.io/aurumdrinks/Drinklist.pdf">
+  <title>QR Code Redirect</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #000; /* Set background color to black */
+      color: #fff; /* Set text color to white */
+    }
+    .loading {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-  <script>
-    window.location.href = 'https://aurum78.github.io/aurumdrinks/Drinklist.pdf';
-  </script>
-
 <body>
-  <h1>Redirecting to PDF file...</h1>
+  <h1>Aurum </h1>
+  <p>Loading your Drinks menu...</p>
+  <div class="loading">
+    <img src="loading.gif" alt="Loading...">
+  </div>
+  <script>
+    // Redirect to PDF file after 1 second delay
+    setTimeout(function() {
+      window.location.href = 'https://aurum78.github.io/aurumdrinks/Drinklist.pdf';
+    }, 1700);
+  </script>
 </body>
 </html>
